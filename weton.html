@@ -3,28 +3,77 @@
     <title>Tugas Modul 1</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body>
-    <label>Hari</label>
-    <select id="hari">
-        <option value="4">Senin</option>
-        <option value="3">Selasa</option>
-        <option value="7">Rabu</option>
-        <option value="8">Kamis</option>
-        <option value="6">Jumat</option>
-        <option value="9">Sabtu</option>
-        <option value="5">Minggu</option>
-    </select>
-    <label for="pasaran">Pasaran</label>
-    <select id="pasaran">
-        <option value="9">Pahing</option>
-        <option value="7">Pon</option>
-        <option value="4">Wage</option>
-        <option value="8">Kliwon</option>
-        <option value="5">Legi</option>
-    </select>
-    <button onclick="tampilIn()">Hitung</button>
-    <p id="tampil"></p>
+<body class="container">
+    <h1>Weton Jawa</h1>
+    <main>
+        <div class="row">
+            <div class="col-2">
+                <label for="hari" class="form-label">Hari Lahirmu</label>
+            </div>
+            <div class="col-2">
+                <select id="hari" class="form-select">
+                    <option value="4">Senin</option>
+                    <option value="3">Selasa</option>
+                    <option value="7">Rabu</option>
+                    <option value="8">Kamis</option>
+                    <option value="6">Jumat</option>
+                    <option value="9">Sabtu</option>
+                    <option value="5">Minggu</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label for="pasaran" class="form-label">Pasaranmu</label>
+            </div>
+            <div class="col-2">
+                <select id="pasaran" class="form-select">
+                    <option value="9">Pahing</option>
+                    <option value="7">Pon</option>
+                    <option value="4">Wage</option>
+                    <option value="8">Kliwon</option>
+                    <option value="5">Legi</option>
+                </select>
+            </div>       
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label for="hari_pasangan" class="form-label">Hari Lahir Pasanganmu</label>
+            </div>
+            <div class="col-2">
+                <select id="hari_pasangan" class="form-select">
+                    <option value="4">Senin</option>
+                    <option value="3">Selasa</option>
+                    <option value="7">Rabu</option>
+                    <option value="8">Kamis</option>
+                    <option value="6">Jumat</option>
+                    <option value="9">Sabtu</option>
+                    <option value="5">Minggu</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label for="pasaran_pasangan" class="form-label">Pasaran Pasanganmu</label>
+            </div>
+            <div class="col-2">
+                <select id="pasaran_pasangan" class="form-select">
+                    <option value="9">Pahing</option>
+                    <option value="7">Pon</option>
+                    <option value="4">Wage</option>
+                    <option value="8">Kliwon</option>
+                    <option value="5">Legi</option>
+                </select>
+                <button type="button" class="btn btn-dark" onclick="tampilIn()">Hitung</button>
+            </div>
+        </div>
+           
+        <p>Hitungan Neptu:</p>
+        <p id="tampil"></p>
+        <p>Arti:</p>
+        <p class="col-6" id="arti"></p>
+    </main>
+    
+    
+    
     <script src="./weton.js"></script>
 </body>
 </html>
